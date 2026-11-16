@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration | Greenfield School</title>
+</head>
+<body>
+  <header>
+    <h1>Student Registration</h1>
+    <h2>Register for the new academic session</h2>
+  </header>
+
+  <main>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About the school</h2>
+      <p>Welcome to Greenfield School.</p>
+      <p>Complete the form below to register.</p>
+    </section>
+
+    <section aria-labelledby="campus-heading">
+      <h2 id="campus-heading">Campus photograph</h2>
+      <img src="school-campus.jpg" alt="The main classroom block at Greenfield School">
+      <p>Visit our <a href="pages/about.html">about page</a> to learn more.</p>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Registration form</h2>
+      <form action="submit-registration" method="post">
+        <div>
+          <label for="student-name">Full name</label>
+          <input type="text" id="student-name" name="student-name" autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <button type="submit">Submit registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Greenfield School</p>
+  </footer>
+</body>
+</html>
